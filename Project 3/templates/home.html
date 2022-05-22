@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Do Hyeon', sans-serif;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Cover Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Home</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+      </nav>
+    </div>
+  </header>
+
+    <br><br><br><br><br>
+    <h1> 한정판 신발 리셀가 예측 (나이키 오프화이트, 아디다스) </h1>
+    <h3> 정보를 입력 받아 예측을 진행합니다</h3>
+    
+    <form method="POST", action="{{url_for('predict')}}">
+    <b> 
+        
+         <!--<label for="Order Date">Order Date:</label>
+        <input type="date", name='Order Date', placeholder="Order Date (MM/DD/YY)">
+         -->
+
+        <input type="number", step='1', name='Retail Price', placeholder="정식 발매가: $ 기준">
+
+        <!--<label for="Release_Date">Release Date:</label>
+        <input type="date", name='Release_Date', placeholder="Release_Date (MM/DD/YY)">
+        -->
+
+
+            <select name="yeezy350" class="form-select" aria-label="Default select example">
+                <option selected>Yeezy 350?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="airjordan" class="form-select" aria-label="Default select example">
+                <option selected>Air Jordan 1?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="airforce" class="form-select" aria-label="Default select example">
+                <option selected>Nike Air Force?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="airmax90" class="form-select" aria-label="Default select example">
+                <option selected>Nike Air Max 90?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="airmax97" class="form-select" aria-label="Default select example">
+                <option selected>Nike Air Max 97?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="presto" class="form-select" aria-label="Default select example">
+                <option selected>Nike Presto?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="vapomax" class="form-select" aria-label="Default select example">
+                <option selected>Nike Vapormax?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="blazer" class="form-select" aria-label="Default select example">
+                <option selected>Nike Blazer?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="zoom" class="form-select" aria-label="Default select example">
+                <option selected>Nike Zoom Fly?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="react" class="form-select" aria-label="Default select example">
+                <option selected>Nike React?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="California" class="form-select" aria-label="Default select example">
+                <option selected>California?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="New York" class="form-select" aria-label="Default select example">
+                <option selected>New York?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Oregon" class="form-select" aria-label="Default select example">
+                <option selected>Oregon?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Florida" class="form-select" aria-label="Default select example">
+                <option selected>Florida?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Texas" class="form-select" aria-label="Default select example">
+                <option selected>Texas?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Other States" class="form-select" aria-label="Default select example">
+                <option selected>Other States?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Black" class="form-select" aria-label="Default select example">
+                <option selected>Black?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="White" class="form-select" aria-label="Default select example">
+                <option selected>White?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            <select name="Grey" class="form-select" aria-label="Default select example">
+                <option selected>Grey?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            <select name="Red" class="form-select" aria-label="Default select example">
+                <option selected>Red?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Green" class="form-select" aria-label="Default select example">
+                <option selected>Green?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Neo" class="form-select" aria-label="Default select example">
+                <option selected>Neo?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <select name="Orange" class="form-select" aria-label="Default select example">
+                <option selected>Orange?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Tan/Brown" class="form-select" aria-label="Default select example">
+                <option selected>Tan/Brown?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Pink" class="form-select" aria-label="Default select example">
+                <option selected>Pink?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <select name="Blue" class="form-select" aria-label="Default select example">
+                <option selected>Blue?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <!-- <select name="Colorful" class="form-select" aria-label="Default select example">
+                <option selected>Colorful?</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            -->
+          
+            <input type="number", step='1', name='Number of Sales', placeholder="최근 1년간 거래량">
+
+            <input type="number", step='1', name='Days_Since', placeholder="발매 후 경과된 기간">
+
+            
+            <!-- <select name = "drivetrain" class="form-select" aria-label="Default select example">
+                <option selected style="text-align:center">구동계를 선택해주세요.</option>
+                {% for drivetrain in drivetrain_list %}
+                <option style="text-align:center" value="{{drivetrain}}">{{drivetrain}}</option>
+                {% endfor %}
+            </select>
+            <select name = "material" class="form-select" aria-label="Default select example">
+                <option selected style="text-align:center">소재를 선택해주세요.</option>
+                {% for material in material_list %}
+                <option style="text-align:center" value="{{material}}">{{material}}</option>
+                {% endfor %}
+            </select><br> -->
+             
+            <div style="text-align:center">
+                <input class="btn btn-primary" type="submit" value="제출">
+            </div>
+        </form>
+  </main>
+
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
