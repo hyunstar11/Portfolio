@@ -23,5 +23,6 @@
 - 관련 기술: Deep Learning, Sentiment Analysis 
 
 ### CP2 
-- NEIS 급식 데이터를 기반으로 급식 메뉴들의 카테고리를 (고기 종류) 분류하는 모델을 개발 
+- 기업협업 프로젝트 (누비랩;Nuvi-Lab)
+- NEIS 급식 데이터(66만개)를 기반으로 급식 메뉴들의 카테고리를 (고기 종류) 분류하는 모델을 개발 
 - 관련 기술: KoBERT, Deep Learning, NLP  
