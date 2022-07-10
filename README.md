@@ -1,24 +1,4 @@
 # Portfolio
 
-프로젝트 1부터 CP1은 코드스테이츠 AI 부트캠프 과정 중에 진행했으며, CP2는 기업협업(누비랩과 진행)의 일환으로 진행했습니다. 각 폴더에 대한 개별 README 내용으로 업데이트할 예정입니다. 간단한 내용은 아래와 같습니다 (빠른 시일내에 업데이트 예정).
-
-### Project 2 
-- Lasso Regression 을 이용한 한정판 신발 리셀가를 예측하는 서비스를 개발 
-- 관련 기술: ML 
- 
-### Project 3
-- Project 2 에서 사용했던 모델을 기반으로 한정판 신발 리셀가 예측하는 서비스를 개발 
-- 관련 기술: ML, SQL, Heroku
-
-### Project 4 
-- 딥러닝 모델링을 통한 비트코인 가격 방향을 예측하는 모델을 개발 
-- 관련 기술: Deep Learning 
-
-### CP1 
-- Cryptocurrency 관련 트윗들의 감성분석을 (Sentiment Analysis) 통한 비트코인 가격을 예측하는 모델을 개발
-- 관련 기술: Deep Learning, Sentiment Analysis 
-
-### CP2 
-- 기업협업 프로젝트 (누비랩;Nuvi-Lab)
-- NEIS 급식 데이터(66만개)를 기반으로 급식 메뉴들의 카테고리를 (고기 종류) 분류하는 모델을 개발 
-- 관련 기술: KoBERT, Deep Learning, NLP  
+- 부트캠프에서 진행했던 프로젝트를 정리해보았습니다.
+- 프로젝트 관련 세부 내용은 각 폴더를 클릭하신 후 'Readme' 문서를 통해 확인 가능합니다. 
