@@ -27,13 +27,12 @@
 
 ### 데이터셋에 대한 설명 
 
-- 나이스 교육정보 포털: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
-- 66만개의 Row 
-
+- 나이스 교육정보 포털에서 제공되는 공공데이터 (서울시교육청의 급식데이터로 진행)  
+- 링크: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
+- 고등학교 식단 음식명 추출, 중복 제거
 
 # 2. 프로젝트 진행 과정 
 ### EDA 
-- ##### 고등학교 식단 음식명 추출, 중복 제거
 - 최종 5.5만개 데이터 사용 
 - NEIS 푸드 데이터를 살펴 본 후 각 고기 카테고리에 대한 단어 리스트 구성
 - 중복메뉴 제거 (66만개 -> 5.5만개로 축소) 
