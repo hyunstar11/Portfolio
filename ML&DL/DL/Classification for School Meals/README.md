@@ -60,8 +60,9 @@
 
 <img width="729" alt="스크린샷 2022-07-14 오전 12 28 25" src="https://user-images.githubusercontent.com/90128775/178772236-8a8dfa4e-b1af-441b-bf7a-20e0ae4fc1c7.png">
 
+<img width="652" alt="스크린샷 2022-07-14 오전 1 09 52" src="https://user-images.githubusercontent.com/90128775/178780814-f3d9d226-ce43-4896-8c2a-1f03133c7758.png">
 
-### Vs. Nuvi_Foods 데이터셋 
+#### Vs. Nuvi_Foods 데이터셋 
 - 'Nuvi_Foods' 데이터는 누비랩에서 이미 기업협업 전에 카테고리에 맞게 분류를 해둔 1855개의 데이터셋
 - 모델의 결과와 비교 실행 
 
