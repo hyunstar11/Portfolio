@@ -38,13 +38,29 @@
 - VISUALIZE: Metabase 대시보드를 통해 시각화 
 
 ### 2.1. API 개발 
--
--
--
+- Flask 기반으로 개발 
+- Lasso Regression 모델은 피클링한 후 APP 파일에서 적용 
+- 서비스의 편의성보다는 서비스 제공 자체에 초점을 두었음 
+
+<img width="1075" alt="스크린샷 2022-07-20 오후 10 55 11" src="https://user-images.githubusercontent.com/90128775/180002955-4add352e-b94c-40ed-a941-d148c1af57c3.png">
+
+<img width="1140" alt="스크린샷 2022-07-20 오후 10 55 55" src="https://user-images.githubusercontent.com/90128775/180003017-66b19288-5677-4c23-955b-9d2a5212d1fa.png">
+
+<img width="1071" alt="스크린샷 2022-07-20 오후 10 59 52" src="https://user-images.githubusercontent.com/90128775/180003175-78e7ec69-57e0-40ac-88c0-74dc837c0b94.png">
+
+ <img width="1071" alt="스크린샷 2022-07-20 오후 11 00 18" src="https://user-images.githubusercontent.com/90128775/180003202-1551b1b9-fa56-40e2-8c84-c9c39eecc9f8.png">
+
+예측결과 vs. 실제 결과: 예측 값이 실제 값 보다 13% 정도 높다는 걸 확인할 수 있다
 
 ###. 2.3 Metabase를 통한 시각화 진행 
--
--
--
+- 판매 데이터의 신발 사이즈들을 정규분포를 띔 
+- 신발들이 가장 많이 팔린 주들은 뉴욕, 캘리포니아, 텍사스, 플로리다 그리고 오레건 주
+- 시간이 더 지날수록 가격 프리미엄이 어느 정도 올라가는 현상이 파악됨 
+
+<img width="1413" alt="스크린샷 2022-07-20 오후 11 00 44" src="https://user-images.githubusercontent.com/90128775/180021750-233ea0ec-04be-475d-a558-1d90df832072.png">
+
 
 # 3. 회고 및 향후 발전방향  
+- 헤로쿠를 통해 웹페이지 배포하기 
+- 웹페이지 디자인/편의성 개선 
+- 추가적인 데이터 확보 후 
