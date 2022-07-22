@@ -64,27 +64,7 @@
 - 하지만 Sentiment vs. Price 그래프를 보았을 때 	
   - 긍정적이든 부정적이든 많은 Sentiment는 높은 가격 변동성으로 이어짐
   - 즉 Sentiment가 폭발하는 시기에는 변동성에 익숙하지 않은 사람들은 레버리지를 줄이는 게 멘탈관리에 좋을 것으로 권장함 
-
-
-
-
-
-
-
-- 2.2.1. 첫 번째 모델 
-  - Stationary Data 에 대한 LSTM 모델 
-<img width="770" alt="스크린샷 2022-07-23 오전 1 04 33" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
-
-- 2.2.2. 두 번째 모델 
-  - 이진분류로 진행
-<img width="783" alt="스크린샷 2022-07-23 오전 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
-
-- 2.2.3. Evaluation 
-<img width="1294" alt="스크린샷 2022-07-23 오전 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
-
-- 검토 결과 이진분류 모델의 성능이 더 우수한 것으로 판단 (0.644 accuracy) 
-
-
+ 
 # 3. 회고 및 향후 발전방향  
 - 하고자 하는 건 많았으나 구현하는데 어려움이 있었음 (프로젝트 초기에 서비스 개발을 염두에 두고 - DASH를 사용하는 것을 고려했으나 디버깅에 시간이 너무 소요되면서 방향 변경)
 - DL 모델 성능 개선 
