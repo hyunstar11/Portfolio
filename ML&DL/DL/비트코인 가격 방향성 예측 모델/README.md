@@ -30,6 +30,8 @@
 - 데이터를 Non-Stationary 에서 Stationary (금일 가격 - 전일 가격) 으로 변환 
   - 왜 Stationary 데이터? - 평균분산, 공분산이 일정한 데이터 -> 예측 모델을 만들기에 더 적합
 
+<img width="801" alt="스크린샷 2022-07-23 오전 1 47 29" src="https://user-images.githubusercontent.com/90128775/180486557-abb9ddaa-c830-42a5-a495-9cfd80ee41b6.png">
+
 ### 2.2. 모델링 & 결과 
 
 - 비트코인의 가격 방향을 예측하기 위해 1). Stationary Data로 가격 예측 모델 개발 2). 이진분류로 가격 상하방 예측 모델 개발 
