@@ -55,6 +55,7 @@
 - 분류 기준: 고기 분류 5종류 (누비랩 내부 기준에 의거) 
 
 #### 모델링 과정 및 결과 (1st case, 2st case로 나눠서 KoBERT 모델 학습 및 결과 도출) 
+- 결과 도출 후 누비랩이 이미 분류작업을 진행한 데이터셋과 정확도 비교 
 
 <img width="700" alt="스크린샷 2022-07-14 오전 12 14 43" src="https://user-images.githubusercontent.com/90128775/178772188-87adf7db-000f-47aa-a90e-cf1ccabd9b5d.png">
 
