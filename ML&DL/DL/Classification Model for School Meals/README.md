@@ -1,6 +1,3 @@
-<span style="color:orange"> 글씨색 변경 </span>
-
-
 # 식단 추천 시스템을 위한 음식 다중분류모델 개발 
 
 ### 음식 메뉴들을 특징에 따라 라벨링 하는 모델 작업 (누비랩 협업)
@@ -71,27 +68,21 @@
   - 증폭(Class Imbalance 해결) 을 했을 때도 결과는 크게 다르지 않았음  
   - Epoch 4 기준 **`train acc.`** = 0.999, **`test acc.`** = 0.998 
   - **`Predict()`** 함수 선언 
-  - 모델에 메뉴 입력 -> 라벨링 결과 출력 
-  - 0 (고기 없음) 으로 라벨돼야 되는 메뉴들도 1~5 로 라벨링이 되는 오류가 있었음 
-  - Vs. 누비푸드 데이터 (595/1855 가 고기에 대해 라벨링 완료) 
-  - .Predict 함수 () 를 통해 결과 확인   
+    - 모델에 메뉴 입력 -> 라벨링 결과 출력 
+  - **`Predict()`** 함수를 통해 'Nuvi_Foods' 데이터와 결과 비교  (595/1855 가 고기에 대해 라벨링 완료)
+    - 'Nuvi_Foods' 데이터는 누비랩에서 이미 기업협업 전에 카테고리에 맞게 분류를 해둔 1855개의 데이터셋
     - 단어 리스트에 이미 있는 단어들은 라벨링이 되었음 
-    - 리스트에 없는 단어들 → 0 (분류가 안 됨) 
+    - 리스트에 없는 단어들 → 0 으로 라벨링(분류가 안 됨) 
     - ‘정답'인 누비푸드 데이터에 비해서는 아쉬운 성능 
-
-
-<img width="700" alt="스크린샷 2022-07-14 오전 12 14 43" src="https://user-images.githubusercontent.com/90128775/178772188-87adf7db-000f-47aa-a90e-cf1ccabd9b5d.png">
-
-<img width="729" alt="스크린샷 2022-07-14 오전 12 28 25" src="https://user-images.githubusercontent.com/90128775/178772236-8a8dfa4e-b1af-441b-bf7a-20e0ae4fc1c7.png">
-
-#### Vs. Nuvi_Foods 데이터셋 
-- 'Nuvi_Foods' 데이터는 누비랩에서 이미 기업협업 전에 카테고리에 맞게 분류를 해둔 1855개의 데이터셋
-- 모델의 결과와 비교 실행 
 
 <img width="589" alt="스크린샷 2022-07-14 오전 12 32 45" src="https://user-images.githubusercontent.com/90128775/178773074-480282e5-4b9d-4ca2-aa59-6739119512a2.png">
 
 - 결론을 내리자면 KoBERT 모델은 음식 메뉴의 특성을 학습하기에는 적합한 모델은 아니라는 판단 
 - 단어 리스트에 있는 메뉴들에 대한 분류는 쉽게 이루어지나, 모델을 통해 리스트에 없는, 새로운 메뉴에 대해서 분류를 실행했을 때 정상적으로 이루어지지 않음 
+
+<img width="700" alt="스크린샷 2022-07-14 오전 12 14 43" src="https://user-images.githubusercontent.com/90128775/178772188-87adf7db-000f-47aa-a90e-cf1ccabd9b5d.png">
+
+<img width="729" alt="스크린샷 2022-07-14 오전 12 28 25" src="https://user-images.githubusercontent.com/90128775/178772236-8a8dfa4e-b1af-441b-bf7a-20e0ae4fc1c7.png">
 
 <img width="652" alt="스크린샷 2022-07-14 오전 1 09 52" src="https://user-images.githubusercontent.com/90128775/178780814-f3d9d226-ce43-4896-8c2a-1f03133c7758.png">
 
