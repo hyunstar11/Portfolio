@@ -80,10 +80,6 @@
 - 결론을 내리자면 KoBERT 모델은 음식 메뉴의 특성을 학습하기에는 적합한 모델은 아니라는 판단 
 - 단어 리스트에 있는 메뉴들에 대한 분류는 쉽게 이루어지나, 모델을 통해 리스트에 없는, 새로운 메뉴에 대해서 분류를 실행했을 때 정상적으로 이루어지지 않음 
 
-<img width="700" alt="스크린샷 2022-07-14 오전 12 14 43" src="https://user-images.githubusercontent.com/90128775/178772188-87adf7db-000f-47aa-a90e-cf1ccabd9b5d.png">
-
-<img width="729" alt="스크린샷 2022-07-14 오전 12 28 25" src="https://user-images.githubusercontent.com/90128775/178772236-8a8dfa4e-b1af-441b-bf7a-20e0ae4fc1c7.png">
-
 <img width="652" alt="스크린샷 2022-07-14 오전 1 09 52" src="https://user-images.githubusercontent.com/90128775/178780814-f3d9d226-ce43-4896-8c2a-1f03133c7758.png">
 
 ### 2.4. 고려했던 모델들 
