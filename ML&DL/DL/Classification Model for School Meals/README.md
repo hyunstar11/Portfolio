@@ -35,13 +35,14 @@
 
 - 중복메뉴 제거 (66만개 -> 5.5만개로 축소) 
   - 최종 5.5만개 데이터 사용 
+
+<img width="906" alt="스크린샷 2022-07-13 오후 11 36 09" src="https://user-images.githubusercontent.com/90128775/178760402-e4c9a82e-a128-4fe7-a5e4-83dcf2792653.png">
+
 - NEIS 푸드 데이터의 메뉴들을 살펴 본 후 각 고기 카테고리에 대한 Word List (단어 리스트) 구성 (직접 라벨링 진행) 
   - Word List: 각 고기 종류에 대한 단어 리스트 구성 
     - 식단에 있는 메뉴 파악 후 각 카테고리의 주요 단어 파악 
   
-![화면 캡처 2022-01-26 014653](https://user-images.githubusercontent.com/90128775/182775618-3de3a16b-1e1f-4a91-84b7-c1a252c363ed.png)
-
-<img width="906" alt="스크린샷 2022-07-13 오후 11 36 09" src="https://user-images.githubusercontent.com/90128775/178760402-e4c9a82e-a128-4fe7-a5e4-83dcf2792653.png">
+![단어리스트](https://user-images.githubusercontent.com/90128775/182775833-5879fae0-91c9-4ba5-8c71-b35f1a0519e7.png)
 
 ### 2.2. 모델링 
 - #### KoBERT 
