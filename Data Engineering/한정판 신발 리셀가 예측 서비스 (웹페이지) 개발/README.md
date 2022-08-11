@@ -24,7 +24,7 @@
 ### 1.2. 데이터셋에 대한 설명 
 - 이전 프로젝트 때 사용했던 StockX 거래 데이터셋을 그대로 사용 (CSV 파일) 
 
-(데이터 사진) 
+![StockX_Modified](https://user-images.githubusercontent.com/90128775/184083870-171485bc-ce94-41d5-bf84-07de23ccc5ff.png)
 
 # 2. 프로젝트 진행 과정 
 ### 2.1. 데이터 파이프라인 구축 
