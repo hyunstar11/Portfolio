@@ -1,7 +1,7 @@
 # 한정판 신발 리셀가 예측 서비스 (웹페이지 개발) 
 
 ### 이전 프로젝트인 한정판 신발 리셀가 예측 모델을 기반으로 리셀가 예측 서비스 개발  
--- [모델 개발 관련 내용은 이 링크를 클릭](https://github.com/hyunstar11/Portfolio/tree/main/ML%26DL/ML/%ED%95%9C%EC%A0%95%ED%8C%90%20%EC%8B%A0%EB%B0%9C%20%EB%A6%AC%EC%85%80%EA%B0%80%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8"포트폴리오 보기")  
+- [모델 개발 관련 내용은 이 링크를 클릭](https://github.com/hyunstar11/Portfolio/tree/main/ML%26DL/ML/%ED%95%9C%EC%A0%95%ED%8C%90%20%EC%8B%A0%EB%B0%9C%20%EB%A6%AC%EC%85%80%EA%B0%80%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8)  
 
 
 # 프로젝트 목차 
