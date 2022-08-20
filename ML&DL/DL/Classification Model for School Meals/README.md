@@ -27,8 +27,12 @@
 ### 데이터셋에 대한 설명 
 
 - 나이스 교육정보 포털에서 제공되는 공공데이터 (서울시교육청의 급식데이터로 진행)  
-- 링크: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
 - 고등학교 식단 음식명 추출, 중복 제거
+
+![스크린샷 2022-08-20 오후 8 50 53](https://user-images.githubusercontent.com/90128775/185745031-f91e380d-7351-4065-b19d-8de2efcecd29.png)
+
+- 링크: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
+
 
 # 2. 프로젝트 진행 과정 
 ### 2.1. EDA 
