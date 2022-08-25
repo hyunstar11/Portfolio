@@ -35,8 +35,8 @@
 - 트위터 데이터에 트윗 내용에 대한 VADER(Valence Aware Dictionary and sEntiment Reasoner) 를 사용한 Sentiment Analysis 적용 
  - Vader 란?
    - Natural Language Toolkit (NLTK)에 있는 감성 분석기 
-   - 단어들을 긍정(1),부정(-1),중립(0) 으로 분류 
-- VADER 적용후 데이터셋의 모습 
+   - 해당 트윗에 있는 내용들을 긍정(1),부정(-1),중립(0) 으로 분류 
+- VADER 적용후 데이터셋의 모습 ('Class' 컬럼을 통해 트윗에 대한 평가 확인 가능) 
 ![스크린샷 2022-08-25 오후 9 53 28](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 - 비트코인 가격 vs. 트위터 반응
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
