@@ -17,7 +17,7 @@
 ### 1.1. 문제
 - **`목적`**: 암호화폐 시장에서 인덱스 지표와도 같은 같은 비트코인의 가격 방향성을 예측하는 딥러닝 모델을 만드는 것 (가격의 상방 혹은 하방) 
   - 직전에 진행했던 프로젝트 (비트코인 가격 방향성 예측 모델) 에서는 비트코인 **`가격`** 을 기반으로 가격의 방향성을 예측했지만, 이번에는 암호화폐 관련 **`트위터 데이터`** 로 접근함  
-  - **`Q. 왜 트위터 데이터?`** : 투자를 하다보면 흔히 '인간지표' 라는 말을 접하게 된다; 어떤 특정 사람이 주식이나 암호화폐를 매수하면 그 주식이나 암호화폐의 시세가 빠져는 경우가 있는데, 이런 사람을 두고 인간지표라고 지칭한다. 그렇다면 이 '인간지표'를 수치화 할 수 있는 방법은 없을까? 인간지표를 통해 투자에서 인사이트를 제공할 수 있을까? 하는 생각에서 출발. 
+  - **`Q. 왜 트위터 데이터?`** : 투자를 하다보면 흔히 '인간지표' 라는 말을 접하게 된다; 어떤 특정 사람이 주식이나 암호화폐를 매수하면 그 주식이나 암호화폐의 시세가 빠져는 경우가 있는데, 이런 사람을 두고 인간지표라고 지칭한다. 그렇다면 이 '인간지표'를 수치화 할 수 있는 방법은 없을까? 인간지표를 통해 투자에서 인사이트를 제공할 수 있을까? 하는 생각에서 출발 
 
 ### 1.2. 데이터셋에 대한 설명 
 - Kaggle의 **`Bitcoin Tweets`** 데이터 사용 
@@ -34,23 +34,23 @@
   - 불용어처리를 통해 반복적으로 발생하는 비슷한 단어들을 제거 (e.g. btc, $btc, bitcoins)  
   <img width="609" alt="스크린샷 2022-08-26 오전 12 28 40" src="https://user-images.githubusercontent.com/90128775/186708844-ac81f2b9-78a4-4780-bd3b-88383bd70734.png">
 - 자주 사용되는 단어들의 경우, **`#bitcoin`**, **`#crypto`**, **`buy`**, **`price`**, **`@elonmusk`**,**`#eth`**  등이 있음 
-  - Bitcoin 과 eth 의 경우 암호화폐에서 대장격의 코인들이며, Elon Musk의 경우 'Doge Coin'과 테슬라의 비트코인 매입 뉴스 때문에 암호화폐계에서 자주 언급되는 인물임  
-- 트위터 데이터에 트윗 내용에 대한 VADER(Valence Aware Dictionary and sEntiment Reasoner) 를 사용한 Sentiment Analysis 적용 
+  - Bitcoin 과 eth 의 경우 암호화폐에서 대장격의 코인들이며, Elon Musk의 경우 'Doge Coin'과 테슬라의 비트코인 매입 뉴스 때문에 암호화폐계에서 자주 언급되는 인물  
+- 트위터 데이터에 트윗 내용에 대한 VADER(Valence Aware Dictionary and sEntiment Reasoner) 를 사용한 Sentiment Analysis 적용
   - **`목적`**: Vader를 통해 각 개별 트윗들의 긍정,부정,중립 스탠스를 파악
   - 그렇다면 **`Vader`** 란 무엇인가?
-   - Natural Language Toolkit (NLTK)에 있는 감성 분석기 
+   - Natural Language Toolkit (NLTK)에 있는 감성 분석기
    - 해당 트윗에 있는 내용들을 긍정(1),부정(-1),중립(0) 으로 분류 
 - VADER 적용후 데이터셋의 모습 ('Class' 컬럼을 통해 트윗에 대한 평가 확인 가능) 
 ![스크린샷 2022-08-25 오후 9 53 28](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 
 ### 2.2. 모델링 
 - Sentiment Analysis Score를 통한 비트코인 방향성 예측 
-  - LSTM 사용 
-  - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’) 
+  - LSTM 사용. 
+  - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’). 
 
 ### 2.2. 결과 
 - 시장의 Sentiment를 통해 비트코인 가격의 방향성을 예측했을 때 0.5 accuracy를 보임  
-  - 상하방을 예측하는 데 있어서 반반의 확률이기에 크게 유의미한 결과는 아님   
+  - 상하방을 예측하는 데 있어서 반반의 확률이기에 크게 유의미한 결과는 아님  
 - 하지만 Sentiment vs. BTC Price 그래프를 보았을 때 (Vader 모델의 결과를 기반으로 도출) 	
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
   - 긍정적이든 부정적이든 많은 시장 참여자들의 높은 Sentiment는 (긍정/부정/중립이든 반응이 많을 수록) 높은 가격 변동성으로 이어짐
