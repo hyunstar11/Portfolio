@@ -21,11 +21,8 @@
 
 ### 1.2. 데이터셋에 대한 설명 
 - Kaggle의 ‘Bitcoin Tweets’ 데이터 사용 
-  - 30만개의 트윗 * 트윗에 대한 정보가 있는 13개의 열 
-  
-![스크린샷 2022-08-25 오후 9 36 34](https://user-images.githubusercontent.com/90128775/186668720-8551f4c9-3df0-4562-b681-7a79aafaec3a.png)
-
-
+  - 30만개의 트윗 * 트윗에 대한 정보가 있는 13개의 열  
+![스크린샷 2022-08-25 오후 10 01 33](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
 - 비트코인 가격을 받아오기 위해 Alpha Vantage 의 API를 사용 
 
 # 2. 프로젝트 진행 과정 
