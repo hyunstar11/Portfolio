@@ -32,30 +32,34 @@
 - 텍스트 토큰화 후 단어 분포 분석 
   - 단어 토큰화를 통해 비트코인 관련 트윗에는 어떤 내용들이 많이 언급되는지 파악
   - 불용어처리를 통해 반복적으로 비슷한 단어들을 제거 (e.g. btc, $btc, bitcoins)  
-- 트위터 데이터에 트윗 내용에 대한 VADER를 사용한 Sentiment Analysis 적용 
+- 트위터 데이터에 트윗 내용에 대한 VADER 를 사용한 Sentiment Analysis 적용 
  - Natural Language Toolkit (NLTK)에 있는 감성 분석기 
  - 단어들을 긍,부,중립으로 분류 
-- VADER 적용후 데이터의
+- VADER 적용후 데이터
+(사진) 
 - 비트코인 가격 vs. 트위터 반응
+(사진)
 
-### 2.2. 모델링 & 결과 
+### 2.2. 모델링 
 
 - Sentiment 예측 모델 
   - 다중분류 문제로 접근 (Activation= Softmax, Loss=’categorical_crossentropy’) 
   - 데이터 레이블링 - 긍정:1, 중립:0, 부정: -1
   - Sentiment 계수와 가격과의 상관관계가 성립이 된다면 결과의 신뢰도가 높을 것으로 예상
-  - LSTM  
+  - LSTM 모델 
   - 결과로는 Sentiment Analysis Score를 도출 
 
 - Sentiment Analysis Score를 통한 비트코인 방향성 예측 
   - LSTM 사용 
   - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’) 
 
-- DL을 통한 시장 참여자들의 Sentiment(감성) 예측은 꽤나 높은 정확도를 보인다 
+### 2.2. 결과 
+
+- 딥러닝 모델을 통한 시장 참여자들의 Sentiment(감성) 예측은 꽤나 높은 정확도를 보임 
 - 현재 모델을 기준으로 봤을 때 Sentiment의 비트코인 가격에 대한 예측력은 높지 않은 수준 
 - 하지만 Sentiment vs. Price 그래프를 보았을 때 	
   - 긍정적이든 부정적이든 많은 시장 참여자들의 높은 양의 Sentiment는 높은 가격 변동성으로 이어짐
-  - 즉 Sentiment가 폭발하는 시기에는 변동성에 익숙하지 않은 사람들은 레버리지를 줄이는 게 멘탈관리에 좋을 것으로 판단함 
+  - 즉 Sentiment가 폭발하는 시기에는 변동성에 익숙하지 않은 사람들은 레버리지를 줄이는 게 멘탈관리에 좋을 것으로 판단됨
     - E.g. 레버리지 상품(3X와 같은 상품들), 파생상품 (Futures, Options, etc)
  
 # 3. 회고 및 향후 발전방향  
