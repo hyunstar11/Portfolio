@@ -22,6 +22,10 @@
 ### 1.2. 데이터셋에 대한 설명 
 - Kaggle의 ‘Bitcoin Tweets’ 데이터 사용 
   - 30만개의 트윗 * 트윗에 대한 정보가 있는 13개의 열 
+  
+![스크린샷 2022-08-25 오후 9 36 34](https://user-images.githubusercontent.com/90128775/186668720-8551f4c9-3df0-4562-b681-7a79aafaec3a.png)
+
+
 - 비트코인 가격을 받아오기 위해 Alpha Vantage 의 API를 사용 
 
 # 2. 프로젝트 진행 과정 
@@ -36,9 +40,9 @@
  - Natural Language Toolkit (NLTK)에 있는 감성 분석기 
  - 단어들을 긍,부,중립으로 분류 
 - VADER 적용후 데이터
-(사진) 
+![스크린샷 2022-08-25 오후 9 53 28](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 - 비트코인 가격 vs. 트위터 반응
-(사진)
+![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
 
 ### 2.2. 모델링 
 
