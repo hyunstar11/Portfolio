@@ -66,10 +66,9 @@
 
 - 발전방향 
   - Vader 외 다른 Sentiment Analysis 도구? 
-  - Sentiment 기반 가격 예측 모델
-  - 종합적인 DL 모델 만들기  
+  - Sentiment 기반 가격 예측 모델  
   - 트위터 외(뉴스 기사 등) Sentiment 분석 
-  - LSTM 말고 조금 더 최신 모델을 사용 
+  - LSTM 말고 조금 더 최신의 모델을 사용 
 
 
 
