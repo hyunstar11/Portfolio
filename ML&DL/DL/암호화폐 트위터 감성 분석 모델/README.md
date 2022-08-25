@@ -33,7 +33,8 @@
   - 단어 토큰화를 통해 비트코인 관련 트윗에는 어떤 내용들이 많이 언급되는지 파악
   - 불용어처리를 통해 반복적으로 발생하는 비슷한 단어들을 제거 (e.g. btc, $btc, bitcoins)  
   <img width="609" alt="스크린샷 2022-08-26 오전 12 28 40" src="https://user-images.githubusercontent.com/90128775/186708844-ac81f2b9-78a4-4780-bd3b-88383bd70734.png">
-- 자주 사용되는 단어들의 경우, **`#bitcoin`**, **`#crypto`**, **`buy`**, **`price`**, **`@elonmusk`** 등이 있음 
+- 자주 사용되는 단어들의 경우, **`#bitcoin`**, **`#crypto`**, **`buy`**, **`price`**, **`@elonmusk`**,**`#eth`**  등이 있음 
+  - Bitcoin 과 eth 의 경우 암호화폐에서 대장격의 코인들이며, Elon Musk의 경우 'Doge Coin'과 테슬라의 비트코인 매입 뉴스 때문에 암호화폐계에서 자주 언급되는 인물임  
 - 트위터 데이터에 트윗 내용에 대한 VADER(Valence Aware Dictionary and sEntiment Reasoner) 를 사용한 Sentiment Analysis 적용 
   - **`목적`**: Vader를 통해 각 개별 트윗들의 긍정,부정,중립 스탠스를 파악
   - 그렇다면 **`Vader`** 란 무엇인가?
