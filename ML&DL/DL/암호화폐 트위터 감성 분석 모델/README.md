@@ -32,47 +32,42 @@
 - 텍스트 토큰화 후 단어 분포 분석 
   - 단어 토큰화를 통해 비트코인 관련 트윗에는 어떤 내용들이 많이 언급되는지 파악
   - 불용어처리를 통해 반복적으로 발생하는 비슷한 단어들을 제거 (e.g. btc, $btc, bitcoins)  
+  <img width="609" alt="스크린샷 2022-08-26 오전 12 28 40" src="https://user-images.githubusercontent.com/90128775/186708844-ac81f2b9-78a4-4780-bd3b-88383bd70734.png">
+  - 자주 사용되는 단어들의 경우, #bitcoin, #crypto, buy, price, @elonmusk 등이 있음 
 - 트위터 데이터에 트윗 내용에 대한 VADER(Valence Aware Dictionary and sEntiment Reasoner) 를 사용한 Sentiment Analysis 적용 
- - Vader 란?
+  - **`목적`**: Vader를 통해 각 개별 트윗들의 긍정,부정,중립 스탠스를 파악
+  - 그렇다면 **`Vader`** 란 무엇인가?
    - Natural Language Toolkit (NLTK)에 있는 감성 분석기 
    - 해당 트윗에 있는 내용들을 긍정(1),부정(-1),중립(0) 으로 분류 
 - VADER 적용후 데이터셋의 모습 ('Class' 컬럼을 통해 트윗에 대한 평가 확인 가능) 
 ![스크린샷 2022-08-25 오후 9 53 28](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 - 비트코인 가격 vs. 트위터 반응
-![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
+  - Vader 모델의 결과를 기반으로 도출 
 
 ### 2.2. 모델링 
-- Sentiment 예측 모델 
-  - 다중분류 문제로 접근 (Activation= Softmax, Loss=’categorical_crossentropy’) 
-  - 데이터 레이블링 - 긍정:1, 중립:0, 부정: -1
-  - Sentiment 계수와 가격과의 상관관계가 성립이 된다면 결과의 신뢰도가 높을 것으로 예상
-  - LSTM 모델 
-  - 결과로는 Sentiment Analysis Score를 도출 
-
 - Sentiment Analysis Score를 통한 비트코인 방향성 예측 
   - LSTM 사용 
   - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’) 
 
 ### 2.2. 결과 
-- 딥러닝 모델을 통한 시장 참여자들의 Sentiment(감성) 예측은 꽤나 높은 정확도를 보임 
-- 현재 모델을 기준으로 봤을 때 Sentiment의 비트코인 가격에 대한 예측력은 높지 않은 수준 
-- 하지만 Sentiment vs. Price 그래프를 보았을 때 	
-  - 긍정적이든 부정적이든 많은 시장 참여자들의 높은 양의 Sentiment는 높은 가격 변동성으로 이어짐
-  - 즉 Sentiment가 폭발하는 시기에는 변동성에 익숙하지 않은 사람들은 레버리지를 줄이는 게 멘탈관리에 좋을 것으로 판단됨
+- 시장의 Sentiment를 통해 비트코인 가격의 방향성을 예측했을 때 0.5 accuracy를 보임  
+- 하지만 Sentiment vs. BTC Price 그래프를 보았을 때 	
+![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
+  - 긍정적이든 부정적이든 많은 시장 참여자들의 높은 Sentiment는 (긍정/부정/중립이든 반응이 많을 수록) 높은 가격 변동성으로 이어짐
+  - 즉 Sentiment가 폭발하는 시기에는 변동성에 익숙하지 않은 사람들은 레버리지를 줄이는 게 멘탈관리에 좋을 것으로 판단함 
     - E.g. 레버리지 상품(3X와 같은 상품들), 파생상품 (Futures, Options, etc)
  
 # 3. 회고 및 향후 발전방향  
-- 하고자 하는 건 많았으나 구현하는데 어려움이 있었음 (프로젝트 초기에 서비스 개발을 염두에 두고 - DASH를 사용하는 것을 고려했으나 디버깅에 시간이 너무 소요되면서 방향 변경)
-- DL 모델 성능 개선 
-  - 하이퍼파라미터 튜닝 
-- Sentiment ~ 가격/가격 방향 관계에 대한 수치화
-
-- 발전방향 
+- 하고자 하는 건 많았으나 구현하는데 어려움이 있었음 (프로젝트 초기에 서비스 개발을 염두에 두고 - DASH를 사용하는 일종의 가격 조회 플랫폼을 고려했으나 디버깅에 시간이 너무 소요되면서 방향 변경)
+- 향후 발전방향 
   - Vader 외 다른 Sentiment Analysis 도구? 
   - Sentiment 기반 가격 예측 모델  
   - 트위터 외(뉴스 기사 등) Sentiment 분석 
-  - LSTM 말고 조금 더 최신의 모델을 사용 
-
+  - LSTM 말고 더 최신의 모델을 사용 
+  - Sentiment ~ 가격/가격 방향 관계에 대한 수치화
+    - DL을 잘 모르는 사람도 결과를 쉽게 이해할 수 있도록 변경  
+  - DL 모델 성능 개선 
+    - 하이퍼파라미터 튜닝 필요 
 
 
 
