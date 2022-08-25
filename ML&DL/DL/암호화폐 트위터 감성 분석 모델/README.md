@@ -42,7 +42,6 @@
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
 
 ### 2.2. 모델링 
-
 - Sentiment 예측 모델 
   - 다중분류 문제로 접근 (Activation= Softmax, Loss=’categorical_crossentropy’) 
   - 데이터 레이블링 - 긍정:1, 중립:0, 부정: -1
@@ -55,7 +54,6 @@
   - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’) 
 
 ### 2.2. 결과 
-
 - 딥러닝 모델을 통한 시장 참여자들의 Sentiment(감성) 예측은 꽤나 높은 정확도를 보임 
 - 현재 모델을 기준으로 봤을 때 Sentiment의 비트코인 가격에 대한 예측력은 높지 않은 수준 
 - 하지만 Sentiment vs. Price 그래프를 보았을 때 	
