@@ -48,13 +48,12 @@
 ### 2.2. 모델링 
 - Sentiment Analysis Score를 통한 비트코인 방향성 예측 
   - LSTM 사용
-  - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’)
-    - 감성(Sentiment)을 기반으로 (vader_neg, neu, pos, comp, class) 비트코인 가격 방향 (price_updown) 에 대한 예측  
   - 이전에 수행했던 가격 기반 방향성 예측 모델과 동일간 기간으로 예측 진행 (모델간의 비교를 위해) 
     - 2021년 2월 5일 ~ 2022년 4월 22일 (프로젝트 수행 시점) 으로 기간 설정 
     - 가격 방향 (price_updown) 칼럼 추가 
       - 해당 날짜에 상승으로 마감하면 1, 하락으로 마감 시 0 으로 설정 
-      - 
+  - 이중분류 문제로 접근 (Activation= Sigmoid, Loss=’binary_crossentropy’)
+    - 감성(Sentiment)을 기반으로 (vader_neg, neu, pos, comp, class) 비트코인 가격 방향 (price_updown) 에 대한 예측    
 <img width="1097" alt="스크린샷 2022-10-14 오전 10 49 43" src="https://user-images.githubusercontent.com/90128775/195744411-6ca219c3-e6eb-4c2c-8eb1-93e4c67f748d.png">
 
 
