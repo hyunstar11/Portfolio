@@ -31,7 +31,7 @@
 # 2. 프로젝트 진행 과정 
 ### 2.1. 데이터 파이프라인 구축 
 - DATA: StockX 에서 제공하는 신발 거래데이터 획득 후 전처리 진행 
-- STORAGE: 전처리된 데이터를 SQL DB 에 적재 
+- STORAGE: 전처리된 데이터를 DB에 적재 
 - API: Flask로 서비스 배포
 - VISUALIZE: Metabase 대시보드를 통해 시각화 
 
