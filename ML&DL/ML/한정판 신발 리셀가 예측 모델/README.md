@@ -60,7 +60,7 @@ Cleaning the Data:
 
 - Results from the baseline model essentially yielded no real insight 
 - Thus it became reasonable to consider more complex models such as Linear Regression, Random Forest, XGBoost, LightGBM and Ensemble Model
-- Because of the concerns about potentai overfitting, I tried various methods of feature selections and making comparisons betweeen MAE and MAE CV for the various models before arriving at a conclusion.
+- Because of the concerns about potential overfitting, I tried various methods of feature selections and making comparisons betweeen MAE and MAE CV for the various models before arriving at a conclusion.
 - Out of the five more models that I tested, the Ensemble Model yielded the best results, with a lower MAE in cross-validation (20.14 for cross-validation vs. 31.75 for Ensemble MAE) suggesting that the model is generalizing well across different subsets of the data, which is a strong indication of its robustness. 
 
 ### 2.3. Feature Importance 
