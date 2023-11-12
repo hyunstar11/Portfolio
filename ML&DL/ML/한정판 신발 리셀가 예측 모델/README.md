@@ -1,6 +1,5 @@
 # Sneaker Resell Price Prediction Model (2022.01.07~12) 
-# Revised in November 2023
-
+Revised in November 2023
 # Project Outline 
 
 #### 1. Introduction 
