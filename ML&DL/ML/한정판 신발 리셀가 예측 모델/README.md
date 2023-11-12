@@ -3,7 +3,7 @@ Revised in November 2023
 # Project Outline 
 
 #### 1. Introduction 
- - 1.1. Probelm Statement
+ - 1.1. Problem Statement
  - 1.2. Description of the dataset 
 
 #### 2. Steps 
