@@ -59,9 +59,9 @@ Cleaning the Data:
 ![스크린샷 2023-11-12 오후 11 58 40](https://github.com/hyunstar11/Portfolio/assets/90128775/b74de6d6-297d-4114-8a1f-671854fa879e)
 
 - Results from the baseline model essentially yielded no real insight 
-- Thus it became reasonable to consider more complex models such as Linear Regression, Random Forest, XGBoost, LightGBM and Ensemble Model
-- Because of the concerns about potential overfitting, I tried various methods of feature selections and making comparisons betweeen MAE and MAE CV for the various models before arriving at a conclusion.
-- Out of the five more models that I tested, the Ensemble Model yielded the best results, with a lower MAE in cross-validation (20.14 for cross-validation vs. 31.75 for Ensemble MAE) suggesting that the model is generalizing well across different subsets of the data, which is a strong indication of its robustness. 
+- Given the possible limitations of simpler models, a progression to more complex models such as Linear Regression, Random Forest, XGBoost, LightGBM, and an Ensemble Model was considered. These models are known for their ability to handle complex datasets with sophisticated feature interactions.
+- To mitigate the risk of overfitting, various feature selection methods were employed. A careful comparison between the MAE and cross-validation MAE (MAE CV) for each model was conducted, ensuring that the models not only fit the training data well but also generalize effectively to new data.
+- Among the models tested, the Ensemble Model demonstrated superior performance. It achieved a lower MAE in cross-validation (20.25 for MAE CV compared to 31.90 for the Ensemble's standard MAE), which indicates that the model has strong generalization capabilities across different data subsets, an essential quality for robust predictive modeling.
 
 ### 2.3. Feature Importance 
 
