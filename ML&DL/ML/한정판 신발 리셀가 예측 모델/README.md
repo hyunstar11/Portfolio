@@ -1,19 +1,20 @@
-# 한정판 신발 리셀가 예측 모델 개발 (2022.01.07~12) 
+# Sneaker Resell Price Prediction Model (2022.01.07~12) 
+# Revised in November 2023
 
-# 프로젝트 목차 
+# Project Outline 
 
-#### 1. 서론
- - 1.1. 문제
- - 1.2. 데이터셋에 대한 설명 
+#### 1. Introduction 
+ - 1.1. Probelm Statement
+ - 1.2. Description of the dataset 
 
-#### 2. 프로젝트 진행 과정 
+#### 2. Steps 
 - 2.1. EDA and Data Analysis 
 - 2.2. Modeling & Selection   
 - 2.3. Feature Importance 
 - 2.4. Interpreting Coefficients (PDP Plot) 
 - 2.5. Prediction 
 
-#### 3. 회고 및 향후 발전방향  
+#### 3. Reflection and Next Steps 
 
 # 1. Introduction 
 ### 1.1. Problem Statement 
@@ -26,7 +27,7 @@
 
 ![StockX Data](https://user-images.githubusercontent.com/90128775/184078928-c0470835-e453-448e-b325-7afa42aeeb9d.png)
 
-# 2. Project Progression 
+# 2. Steps
 ### 2.1. EDA and Data Analysis 
 - Overview of My Data Processing Pipeline
 - In my project, I worked with a dataset of sneaker sales, focusing on enhancing the data to make it suitable for advanced analysis and machine learning. Below is an overview of the steps I took to preprocess and transform the data:
@@ -83,6 +84,10 @@ Cleaning the Data:
 
 ![image](https://github.com/hyunstar11/Portfolio/assets/90128775/7286cb0e-a36c-4a03-94d8-92d2d7caf709)
 
+
+__________________________________________________________________________________________________________________
+Korean Version 
+Originally Written in 2022 
 #### 1. 서론
  - 1.1. 문제
  - 1.2. 데이터셋에 대한 설명 
