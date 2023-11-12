@@ -38,7 +38,7 @@
 - Overview of My Data Processing Pipeline
 - In my project, I worked with a dataset of sneaker sales, focusing on enhancing the data to make it suitable for advanced analysis and machine learning. Below is an overview of the steps I took to preprocess and transform the data:
 
--2.1.1. Data Loading: I started by loading the sneaker sales data from a CSV file into a pandas DataFrame.
+- 2.1.1. Data Loading: I started by loading the sneaker sales data from a CSV file into a pandas DataFrame.
 -2.1.2. Date Preprocessing: The dataset included date fields ('Order Date' and 'Release Date'), which I converted into a more standardized format (MM-DD-YYYY).
 -2.1.3. Feature Engineering – Color and Sneaker Type: I added new features to the dataset based on the names of the sneakers. For instance, if a sneaker name contained a color like 'Black' or 'White', I created a corresponding feature (column) for it. Similarly, I identified different sneaker types (like 'Yeezy-Boost-350', 'Air-Jordan') from the sneaker names and created binary features for these as well.
 -2.1.4. Region-Based Features: Recognizing the importance of geographical influence on sneaker sales, I created features based on the buyer's region, like 'California', 'New York', etc.
