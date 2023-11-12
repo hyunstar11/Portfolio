@@ -59,10 +59,6 @@ Cleaning the Data:
 - Thus it became reasonable to consider more complex models such as Linear Regression, Random Forest, XGBoost, LightGBM and Ensemble Model
 - Out of the five more models that I tested besides the baseline model, the Ensemble Model yielded the best results, with a lower MAE in cross-validation (20.14 for cross-validation vs. 31.75 for Ensemble MAE) suggesting that the model is generalizing well across different subsets of the data, which is a strong indication of its robustness. 
 
-<img width="755" alt="스크린샷 2022-07-21 오전 12 59 30" src="https://user-images.githubusercontent.com/90128775/180028799-c5ebb709-1bc4-45c7-a746-28c6f95325e8.png">
-
-<img width="722" alt="스크린샷 2022-07-21 오전 1 00 47" src="https://user-images.githubusercontent.com/90128775/180029125-dfe4bba5-b61d-4d57-a304-c8a11893244e.png">
-
 ### 2.3. Feature Importance 
 
 [needs update] 
