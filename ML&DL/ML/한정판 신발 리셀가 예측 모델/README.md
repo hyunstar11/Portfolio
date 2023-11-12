@@ -55,9 +55,12 @@ Cleaning the Data:
 - Confirming that shoe size has little to do with resale value
 
 ### 2.2. Modeling & Selection 
+
+![스크린샷 2023-11-12 오후 11 58 40](https://github.com/hyunstar11/Portfolio/assets/90128775/b74de6d6-297d-4114-8a1f-671854fa879e)
+
 - Results from the baseline model essentially yielded no real insight 
 - Thus it became reasonable to consider more complex models such as Linear Regression, Random Forest, XGBoost, LightGBM and Ensemble Model
-- Out of the five more models that I tested besides the baseline model, the Ensemble Model yielded the best results, with a lower MAE in cross-validation (20.14 for cross-validation vs. 31.75 for Ensemble MAE) suggesting that the model is generalizing well across different subsets of the data, which is a strong indication of its robustness. 
+- Out of the five more models that I tested, the Ensemble Model yielded the best results, with a lower MAE in cross-validation (20.14 for cross-validation vs. 31.75 for Ensemble MAE) suggesting that the model is generalizing well across different subsets of the data, which is a strong indication of its robustness. 
 
 ### 2.3. Feature Importance 
 
