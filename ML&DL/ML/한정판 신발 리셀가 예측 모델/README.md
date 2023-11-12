@@ -11,7 +11,7 @@ Revised in November 2023
 - 2.2. Modeling & Selection   
 - 2.3. Feature Importance 
 - 2.4. Interpreting Coefficients (PDP Plot) 
-- 2.5. Prediction 
+
 
 #### 3. Reflection and Next Steps 
 
@@ -70,12 +70,6 @@ Cleaning the Data:
 ### 2.4. Interpreting Coefficients (PDP Plot)
 
 [needs update] 
-
-### 2.5. Prediction
-
-<img width="851" alt="스크린샷 2022-07-21 오전 1 15 55" src="https://user-images.githubusercontent.com/90128775/180031964-1f8ebab4-3012-45ad-9ad8-d44104880dbe.png">
-
-- [needs update] 
 
 # 3. 회고 및 향후 발전방향  
 
