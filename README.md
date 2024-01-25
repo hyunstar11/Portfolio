@@ -3,7 +3,7 @@
 - I have the projects I worked on during the Data Science Bootcamp **`(November 2021 - June 2022)`**. 
 - You can read more about each project by clicking on the folder and checking the **`Read Me`** document. 
 - The **`'Sneaker Resell Price Prediction Service (Webpage) Development'`** project was an extension of the **`Sneaker Resell Price Prediction`** project. 
-  - I developed a Prediction Service based on the model developed in the **`Prediction Model** project. 
+  - I developed the Prediction Service based on the model developed in the **`Sneaker Resell Price Prediction`** project. 
 - The projects in the portfolio were conducted by myself on the topics of my choice except for the **`Video game market analysis project`**
 ______________________________________________________________________________________________________________________________________________________________
 - 코드스테이츠 AI 부트캠프 수강중에 **`(2021.11~2022.06)`** 진행했던 프로젝트들을 정리했습니다. 
